@@ -1,0 +1,53 @@
+:root{ /* declarando variáveis na raíz do documento. Afim de facilitar troca das atribuições em um lugar e não em vários!!! */
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* garante que todos elementos não ultrapassem o limite da caixa */
+}
+
+/*elementos base*/
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container{
+    margin-left: 5px;
+    display: flex; /*alinhando elementos*/
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /*cria espaços entre as tags, no caso h2 e nav*/
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px; /*colocando distanciamento entre os links*/
+}
+
+header nav a:hover{ /*definindo uma ação específica, nesse caso quando o mouse passa por cima dos nossos links*/
+    color: #FFF;
+}
+
+
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa-gracieandfrankie.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+}
